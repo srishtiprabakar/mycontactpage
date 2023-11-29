@@ -1,0 +1,301 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-image: url("images/watercolor-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.center {
+	width: 40%;
+	/* ----- This is for repsonsiveness ----- */
+	min-width: 300px;
+	/* ----- This is for repsonsiveness ----- */
+	padding: 2%;
+	margin: 100px auto;
+	background: rgba(130, 84, 134, 0.553);
+	/*this uses opacity of 75% for the background color and rgba values correspond to the color of the center box*/
+	text-align: center;
+	border-radius: 50px 0px 50px 0px;
+
+	/* ---------- This is my fade in code ---------- */
+	animation: fadeIn 2s;
+	-webkit-animation: fadeIn 2s;
+	-moz-animation: fadeIn 2s;
+	-o-animation: fadeIn 2s;
+	-ms-animation: fadeIn 2s;
+	/*border: 4px dashed white;*/
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* --------- END of fade in code ---------- */
+
+#logo {
+	width: 30%;
+	margin-bottom: 40px;
+	/* border: 3px dashed red; */
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Prata', serif;
+	font-size: 2em;
+	margin: 0px auto 10px auto;
+	color: #fff;
+}
+
+h2 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Inter', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.4;
+	color: #fff;
+	padding: 0px 0px;
+	margin: 15px auto 15px auto;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.6;
+	color: #fff;
+}
+
+/* ---------- This is my link design ---------- */
+nav {
+	font-family: 'Inter', sans-serif;
+	font-size: 1.2em;
+	width: 80%; /* ----- This is for responsiveness ----- */
+	margin: 0 auto;
+	border: solid rgb(19, 4, 29);
+	/* ----- this is the same as the link color ----- */
+	border-width: 1px 0;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+}
+
+a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+	transition: transform .25s;
+	/* ----- this shows the duration of the hover transition for the link elements ----- */
+}
+
+a:hover {
+	transform: scale(1.2);
+	background: rgb(37, 12, 54);
+	/* ----- this is the same as the link color ----- */
+}
+
+/* ---------- End of my link design ---------- */
