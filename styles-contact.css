@@ -239,8 +239,9 @@ h1 {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
 	font-family: 'Prata', serif;
 	font-size: 2em;
-	margin: 0px auto 10px auto;
+	margin: 10px auto 10px auto;
 	color: #fff;
+	line-height: normal;
 }
 
 h2 {
@@ -269,7 +270,7 @@ nav {
 	margin: 0 auto;
 	border: solid rgb(19, 4, 29);
 	/* ----- this is the same as the link color ----- */
-	border-width: 1px 0;
+	border-width: 3px 0;
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 40px;
@@ -288,7 +289,7 @@ a {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
 	font-weight: bold;
-	transition: transform .25s;
+	transition: transform .75s;
 	/* ----- this shows the duration of the hover transition for the link elements ----- */
 }
 
